@@ -4,7 +4,7 @@ buildscript {
         version_android_gradle_plugin = '4.1.1'
         version_core = "1.3.2"
         version_constraint_layout = "2.0.4"
-        version_glide = "4.8.0"
+        version_glide = "4.11.0"
         version_glide_compiler = "4.7.1"
         version_google_services = "4.3.4"
         version_hilt = "2.29.1-alpha"
@@ -28,7 +28,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$version_kotlin"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$version_navigation"
         classpath "com.google.dagger:hilt-android-gradle-plugin:$version_hilt"
-//        classpath "com.google.gms:google-services:$version_google_services" // For Firebase
+        classpath "com.google.gms:google-services:$version_google_services" // For Firebase
     }
 }
 
