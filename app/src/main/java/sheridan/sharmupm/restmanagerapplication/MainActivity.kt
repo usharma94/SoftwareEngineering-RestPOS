@@ -2,6 +2,8 @@ package sheridan.sharmupm.restmanagerapplication
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -13,16 +15,24 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.navigation.fragment.findNavController
+import sheridan.sharmupm.restmanagerapplication.ui.data.LoginRepository
+import sheridan.sharmupm.restmanagerapplication.ui.data.LoginDataSource
 
-class MainActivity : AppCompatActivity() {
+class MainActivity() : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var loginRepository: LoginRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+        loginRepository = LoginRepository(
+            dataSource = LoginDataSource()
+        )
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
@@ -44,6 +54,27 @@ class MainActivity : AppCompatActivity() {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
         return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        R.id.action_settings -> {
+            // User chose the "Settings" item, show the app settings UI...
+            true
+        }
+
+        R.id.action_logout -> {
+            loginRepository.logout()
+            Toast.makeText(this, R.string.sign_out, Toast.LENGTH_LONG).show()
+            val navController = findNavController(R.id.nav_host_fragment)
+            navController.navigate(R.id.action_global_nav_login)
+            true
+        }
+
+        else -> {
+            // If we got here, the user's action was not recognized.
+            // Invoke the superclass to handle it.
+            super.onOptionsItemSelected(item)
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

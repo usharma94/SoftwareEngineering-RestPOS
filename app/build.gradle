@@ -36,6 +36,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        dataBinding true
+    }
 }
 
 dependencies {
@@ -110,5 +113,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore-ktx'
 //    implementation 'com.google.firebase:firebase-storage-ktx'
 //    implementation 'com.google.firebase:firebase-database-ktx'
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.2.1"
 
 }
