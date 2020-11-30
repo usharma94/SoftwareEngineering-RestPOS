@@ -35,4 +35,8 @@
         android:id="@+id/orderFragment"
         android:name="sheridan.sharmupm.restmanagerapplication.ui.OrderFragment"
         android:label="OrderFragment" />
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="sheridan.sharmupm.restmanagerapplication.ui.LandingFragment"
+        android:label="LandingFragment" />
 </navigation>
