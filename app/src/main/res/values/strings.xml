@@ -12,9 +12,9 @@
     <string name="menu_slideshow">Order</string>
     <string name="menu_reports">Reports</string>
 
-    <string name="fragment_first">Order</string>
-    <string name="fragment_pass_data">Reports</string>
-    <string name="fragment_recycler_view">Menu</string>
+    <string name="fragment_first">Menu</string>
+    <string name="fragment_pass_data">Order</string>
+    <string name="fragment_recycler_view">Reports</string>
     <string name="fragment_receive_data">Receive Text Data</string>
     <string name="color">Menu Detail</string>
 </resources>
