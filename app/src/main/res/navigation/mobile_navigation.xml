@@ -22,4 +22,17 @@
         android:name="sheridan.sharmupm.restmanagerapplication.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/colorDetailFragment"
+        android:name="sheridan.sharmupm.restmanagerapplication.ui.detail.MenuDetailFragment"
+        android:label="Color detail fragment"
+        tools:layout="@layout/fragment_menu_detail" >
+        <argument
+            android:name="ColorDetailFragmentArgs"
+            app:argType="sheridan.sharmupm.restmanagerapplication.model.Menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="sheridan.sharmupm.restmanagerapplication.ui.OrderFragment"
+        android:label="OrderFragment" />
 </navigation>

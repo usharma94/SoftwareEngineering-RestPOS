@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="menu_blue">#3474EB</color>
+    <color name="colorPrimary">#55C2FC</color>
+    <color name="colorPrimaryDark">#210018</color>
+    <color name="colorGrey">#FFFFFF </color>
+    <color name="colorBlueGrey">#FFFFFF</color>
+    <color name="colorBackground">#FFFFFF</color>
 </resources>
