@@ -1,4 +1,4 @@
-package sheridan.sharmupm.restmanagerapplication.ui.login
+package sheridan.sharmupm.restmanagerapplication.presentation.login
 
 /**
  * Data validation state of the login form.

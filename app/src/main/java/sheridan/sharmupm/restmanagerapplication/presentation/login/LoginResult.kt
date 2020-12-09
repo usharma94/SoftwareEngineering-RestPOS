@@ -1,4 +1,4 @@
-package sheridan.sharmupm.restmanagerapplication.ui.login
+package sheridan.sharmupm.restmanagerapplication.presentation.login
 
 /**
  * Authentication result : success (user details) or error message.

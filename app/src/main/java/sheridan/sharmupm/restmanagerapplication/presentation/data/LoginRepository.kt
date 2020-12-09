@@ -1,6 +1,6 @@
-package sheridan.sharmupm.restmanagerapplication.ui.data
+package sheridan.sharmupm.restmanagerapplication.presentation.data
 
-import sheridan.sharmupm.restmanagerapplication.ui.data.model.LoggedInUser
+import sheridan.sharmupm.restmanagerapplication.presentation.data.model.LoggedInUser
 
 /**
  * Class that requests authentication and user information from the remote data source and

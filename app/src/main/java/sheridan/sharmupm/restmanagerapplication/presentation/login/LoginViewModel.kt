@@ -1,11 +1,11 @@
-package sheridan.sharmupm.restmanagerapplication.ui.login
+package sheridan.sharmupm.restmanagerapplication.presentation.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import android.util.Patterns
-import sheridan.sharmupm.restmanagerapplication.ui.data.LoginRepository
-import sheridan.sharmupm.restmanagerapplication.ui.data.Result
+import sheridan.sharmupm.restmanagerapplication.presentation.data.LoginRepository
+import sheridan.sharmupm.restmanagerapplication.presentation.data.Result
 
 import sheridan.sharmupm.restmanagerapplication.R
 

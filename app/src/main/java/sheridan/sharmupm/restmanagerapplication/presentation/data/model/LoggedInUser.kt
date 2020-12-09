@@ -1,4 +1,4 @@
-package sheridan.sharmupm.restmanagerapplication.ui.data.model
+package sheridan.sharmupm.restmanagerapplication.presentation.data.model
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

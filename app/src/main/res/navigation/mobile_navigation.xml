@@ -7,24 +7,24 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="sheridan.sharmupm.restmanagerapplication.ui.home.HomeFragment"
+        android:name="sheridan.sharmupm.restmanagerapplication.presentation.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="sheridan.sharmupm.restmanagerapplication.ui.gallery.GalleryFragment"
+        android:name="sheridan.sharmupm.restmanagerapplication.presentation.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="sheridan.sharmupm.restmanagerapplication.ui.slideshow.SlideshowFragment"
+        android:name="sheridan.sharmupm.restmanagerapplication.presentation.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_login"
-        android:name="sheridan.sharmupm.restmanagerapplication.ui.login.LoginFragment"
+        android:name="sheridan.sharmupm.restmanagerapplication.presentation.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" /><action android:id="@+id/action_global_nav_home" app:destination="@id/nav_home"/><action android:id="@+id/action_global_nav_login" app:destination="@id/nav_login"/>
 </navigation>

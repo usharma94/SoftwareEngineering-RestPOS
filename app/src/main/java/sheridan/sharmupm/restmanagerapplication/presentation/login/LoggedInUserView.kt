@@ -1,4 +1,4 @@
-package sheridan.sharmupm.restmanagerapplication.ui.login
+package sheridan.sharmupm.restmanagerapplication.presentation.login
 
 /**
  * User details post authentication that is exposed to the UI

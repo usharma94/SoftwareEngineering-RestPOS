@@ -1,4 +1,4 @@
-package sheridan.sharmupm.restmanagerapplication.ui.gallery
+package sheridan.sharmupm.restmanagerapplication.presentation.gallery
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

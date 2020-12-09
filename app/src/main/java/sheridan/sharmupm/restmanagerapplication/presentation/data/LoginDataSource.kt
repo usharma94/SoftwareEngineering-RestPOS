@@ -1,8 +1,7 @@
-package sheridan.sharmupm.restmanagerapplication.ui.data
+package sheridan.sharmupm.restmanagerapplication.presentation.data
 
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.coroutines.tasks.await
-import sheridan.sharmupm.restmanagerapplication.ui.data.model.LoggedInUser
+import sheridan.sharmupm.restmanagerapplication.presentation.data.model.LoggedInUser
 import java.io.IOException
 
 /**

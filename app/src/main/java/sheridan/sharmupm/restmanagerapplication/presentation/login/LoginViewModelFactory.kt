@@ -1,9 +1,9 @@
-package sheridan.sharmupm.restmanagerapplication.ui.login
+package sheridan.sharmupm.restmanagerapplication.presentation.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import sheridan.sharmupm.restmanagerapplication.ui.data.LoginDataSource
-import sheridan.sharmupm.restmanagerapplication.ui.data.LoginRepository
+import sheridan.sharmupm.restmanagerapplication.presentation.data.LoginDataSource
+import sheridan.sharmupm.restmanagerapplication.presentation.data.LoginRepository
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.
