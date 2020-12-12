@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+<!--        <variable-->
+<!--            name="user"-->
+<!--            type="com.example.android.marsrealestate.network.MarsProperty"/>-->
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/usr_lst_txt_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/user_list_txt_id"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/usr_lst_txt_status"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/user_list_txt_status"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/usr_lst_txt_name_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/user_list_txt_name_first"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/usr_lst_txt_name_last"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/user_list_txt_name_last"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/usr_lst_btn_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/user_list_btn_edit" />
+
+        <Button
+            android:id="@+id/usr_lst_btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/user_list_btn_delete" />
+
+
+    </LinearLayout>
+</layout>

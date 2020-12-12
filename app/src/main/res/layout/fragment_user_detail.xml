@@ -15,6 +15,12 @@
         android:contentDescription="@string/user_detail_image_of_user"
         tools:src="@tools:sample/avatars" />
 
+    <Button
+        android:id="@+id/usr_dtl_btn_upload_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_detail_btn_upload_picture" />
+
     <TextView
         android:id="@+id/usr_dtl_txt_id"
         android:layout_width="match_parent"
@@ -38,6 +44,24 @@
         android:ems="10"
         android:hint="@string/user_detail_name_last"
         android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/usr_dtl_ed_txt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/user_detail_phone"
+        android:inputType="phone"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/usr_dtl_ed_txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/user_detail_email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/usr_dtl_ed_txt_address_street_1"

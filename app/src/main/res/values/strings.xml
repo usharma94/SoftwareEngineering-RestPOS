@@ -7,6 +7,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!--  Pullout Menu  -->
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Menu</string>
     <string name="menu_slideshow">Order</string>
@@ -21,13 +22,22 @@
     <string name="welcome">"Welcome!"</string>
     <string name="sign_out">"Signed out!"</string>
     <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="invalid_password">Password must be > 5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in">Sign in or Register</string>
     <string name="action_sign_out">Sign out</string>
+
+    <!--  User List  -->
+    <string name="user_list_txt_id">User ID</string>
+    <string name="user_list_txt_status">User Status</string>
+    <string name="user_list_txt_name_first">First Name</string>
+    <string name="user_list_txt_name_last">Last Name</string>
+    <string name="user_list_btn_edit">Edit User</string>
+    <string name="user_list_btn_delete">DeleteUser</string>
 
     <!--  User Detail  -->
     <string name="user_detail_image_of_user">Image of User</string>
+    <string name="user_detail_btn_upload_picture">Upload Picture</string>
     <string name="user_detail_id">User ID</string>
     <string name="user_detail_name_first">First Name</string>
     <string name="user_detail_name_last">Last Name</string>
@@ -36,10 +46,13 @@
     <string name="user_detail_address_city">City</string>
     <string name="user_detail_address_postal">Postal Code</string>
     <string name="user_detail_address_country">Country</string>
+    <string name="user_detail_phone">Phone Number</string>
+    <string name="user_detail_email">Email</string>
     <string name="user_detail_btn_archive">Archive User</string>
     <string name="user_detail_btn_confirm">Confirm</string>
     <string name="user_detail_btn_cancel">Cancel</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
