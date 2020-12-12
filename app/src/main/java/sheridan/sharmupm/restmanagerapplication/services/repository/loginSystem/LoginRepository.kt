@@ -1,6 +1,8 @@
-package sheridan.sharmupm.restmanagerapplication.presentation.data
+package sheridan.sharmupm.restmanagerapplication.services.repository.loginSystem
 
-import sheridan.sharmupm.restmanagerapplication.presentation.data.model.LoggedInUser
+import sheridan.sharmupm.restmanagerapplication.application.login.LoggedInUser
+import sheridan.sharmupm.restmanagerapplication.application.login.Result
+import sheridan.sharmupm.restmanagerapplication.persistence.firebase.login.LoginDataSource
 
 /**
  * Class that requests authentication and user information from the remote data source and

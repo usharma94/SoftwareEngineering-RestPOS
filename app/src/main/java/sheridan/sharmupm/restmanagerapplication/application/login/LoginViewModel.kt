@@ -1,13 +1,14 @@
-package sheridan.sharmupm.restmanagerapplication.presentation.login
+package sheridan.sharmupm.restmanagerapplication.application.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import android.util.Patterns
-import sheridan.sharmupm.restmanagerapplication.presentation.data.LoginRepository
-import sheridan.sharmupm.restmanagerapplication.presentation.data.Result
 
 import sheridan.sharmupm.restmanagerapplication.R
+import sheridan.sharmupm.restmanagerapplication.presentation.login.LoggedInUserView
+import sheridan.sharmupm.restmanagerapplication.presentation.login.LoginFormState
+import sheridan.sharmupm.restmanagerapplication.services.repository.loginSystem.LoginRepository
 
 class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {
 

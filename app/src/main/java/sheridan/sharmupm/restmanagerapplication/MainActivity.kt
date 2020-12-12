@@ -15,8 +15,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import sheridan.sharmupm.restmanagerapplication.presentation.data.LoginRepository
-import sheridan.sharmupm.restmanagerapplication.presentation.data.LoginDataSource
+import sheridan.sharmupm.restmanagerapplication.services.repository.loginSystem.LoginRepository
+import sheridan.sharmupm.restmanagerapplication.persistence.firebase.login.LoginDataSource
 
 class MainActivity() : AppCompatActivity() {
 

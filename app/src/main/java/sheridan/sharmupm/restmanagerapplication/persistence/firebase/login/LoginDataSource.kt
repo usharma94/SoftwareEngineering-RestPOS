@@ -1,8 +1,10 @@
-package sheridan.sharmupm.restmanagerapplication.presentation.data
+package sheridan.sharmupm.restmanagerapplication.persistence.firebase.login
 
 import com.google.firebase.auth.FirebaseAuth
-import sheridan.sharmupm.restmanagerapplication.presentation.data.model.LoggedInUser
+import sheridan.sharmupm.restmanagerapplication.application.login.LoggedInUser
+import sheridan.sharmupm.restmanagerapplication.application.login.Result
 import java.io.IOException
+import java.util.*
 
 /**
  * Class that handles authentication w/ login credentials and retrieves user information.
@@ -22,7 +24,7 @@ class LoginDataSource {
                         // Sign in success, update UI with the signed-in user's information
                         println("signInWithEmail:success")
                         val authUser = mAuth!!.currentUser
-                        val user = LoggedInUser(java.util.UUID.randomUUID().toString(), authUser?.email.toString())
+                        val user = LoggedInUser(UUID.randomUUID().toString(), authUser?.email.toString())
                         callback(Result.Success(user));
                     } else {
                         // If sign in fails, display a message to the user.

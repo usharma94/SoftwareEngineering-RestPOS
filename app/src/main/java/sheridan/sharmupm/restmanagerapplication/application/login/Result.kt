@@ -1,4 +1,4 @@
-package sheridan.sharmupm.restmanagerapplication.presentation.data
+package sheridan.sharmupm.restmanagerapplication.application.login
 
 /**
  * A generic class that holds a value with its loading status.
