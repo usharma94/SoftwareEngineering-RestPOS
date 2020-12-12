@@ -11,7 +11,8 @@
     <string name="menu_gallery">Menu</string>
     <string name="menu_slideshow">Order</string>
     <string name="menu_reports">Reports</string>
-    <!-- Strings related to login -->
+
+    <!-- Login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_register">Register</string>
@@ -24,6 +25,21 @@
     <string name="login_failed">"Login failed"</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_out">Sign out</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  User Detail  -->
+    <string name="user_detail_image_of_user">Image of User</string>
+    <string name="user_detail_id">User ID</string>
+    <string name="user_detail_name_first">First Name</string>
+    <string name="user_detail_name_last">Last Name</string>
+    <string name="user_detail_address_street_1">Street Address 1</string>
+    <string name="user_detail_address_street_2">Street Address 2</string>
+    <string name="user_detail_address_city">City</string>
+    <string name="user_detail_address_postal">Postal Code</string>
+    <string name="user_detail_address_country">Country</string>
+    <string name="user_detail_btn_archive">Archive User</string>
+    <string name="user_detail_btn_confirm">Confirm</string>
+    <string name="user_detail_btn_cancel">Cancel</string>
+
+
+
 </resources>
