@@ -27,4 +27,22 @@
         android:name="sheridan.sharmupm.restmanagerapplication.presentation.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" /><action android:id="@+id/action_global_nav_home" app:destination="@id/nav_home"/><action android:id="@+id/action_global_nav_login" app:destination="@id/nav_login"/>
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="sheridan.sharmupm.restmanagerapplication.presentation.userManagement.userList.UserListFragment"
+        android:label="UserListFragment"
+        tools:layout="@layout/fragment_user_list">
+        <action
+            android:id="@+id/action_showUserDetail"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="sheridan.sharmupm.restmanagerapplication.presentation.userManagement.userDetail.UserDetailFragment"
+        android:label="UserDetailFragment"
+        tools:layout="@layout/fragment_user_detail">
+        <argument
+            android:name="selectedUser"
+            app:argType="sheridan.sharmupm.restmanagerapplication.application.models.User" />
+    </fragment>
 </navigation>

@@ -6,9 +6,9 @@
 
     <data>
         <import type="android.view.View"/>
-<!--        <variable-->
-<!--            name="user"-->
-<!--            type="com.example.android.marsrealestate.network.MarsProperty"/>-->
+        <variable
+            name="user"
+            type="sheridan.sharmupm.restmanagerapplication.application.models.User"/>
     </data>
 
     <LinearLayout

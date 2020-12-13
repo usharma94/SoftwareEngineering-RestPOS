@@ -5,34 +5,37 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
-import sheridan.sharmupm.restmanagerapplication.R
+import androidx.navigation.fragment.findNavController
 import sheridan.sharmupm.restmanagerapplication.application.userList.UserListViewModel
-import sheridan.sharmupm.restmanagerapplication.application.userList.UserListViewModelFactory
+import sheridan.sharmupm.restmanagerapplication.databinding.FragmentUserListBinding
 
 
-/**
- * A simple [Fragment] subclass.
- * Use the [UserListFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class UserListFragment : Fragment() {
 
-    private lateinit var userListViewModel: UserListViewModel
+    private lateinit var viewModel: UserListViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_user_detail, container, false)
-    }
+                              savedInstanceState: Bundle?): View {
+        val binding = FragmentUserListBinding.inflate(inflater)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-//        userListViewModel = ViewModelProvider(this, UserListViewModelFactory())
-//            .get(UserListViewModel::class.java)
-    }
+        binding.lifecycleOwner = this
 
+        binding.viewModel = viewModel
 
-    companion object {
+        // Make adapter to link to user details page
+        binding.usersGrid.adapter = UserListAdapter(UserListAdapter.OnClickListener {
+            viewModel.displayUserDetails(it)
+        })
 
+        viewModel.navigateToSelectedUser.observe(viewLifecycleOwner, {
+            if (null != it) {
+                // Must find the NavController from the Fragment
+                this.findNavController().navigate(UserListFragmentDirections.actionShowUserDetail(it))
+                viewModel.displayUserDetailsComplete()
+            }
+        })
+
+        setHasOptionsMenu(true)
+        return binding.root
     }
 }

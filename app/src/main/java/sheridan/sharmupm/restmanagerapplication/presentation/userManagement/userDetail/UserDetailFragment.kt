@@ -6,33 +6,24 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import sheridan.sharmupm.restmanagerapplication.R
 import sheridan.sharmupm.restmanagerapplication.application.userDetail.UserDetailViewModel
 import sheridan.sharmupm.restmanagerapplication.application.userDetail.UserDetailViewModelFactory
+import sheridan.sharmupm.restmanagerapplication.databinding.FragmentUserDetailBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [UserManagementFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class UserDetailFragment : Fragment() {
 
-    private lateinit var userDetailViewModel: UserDetailViewModel
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_user_detail, container, false)
+                              savedInstanceState: Bundle?): View {
+
+        val application = requireNotNull(activity).application
+        val binding = FragmentUserDetailBinding.inflate(inflater)
+        binding.lifecycleOwner = this
+
+        val user = UserDetailFragmentArgs.fromBundle(requireArguments()).selectedUser
+        val viewModelFactory = UserDetailViewModelFactory(user, application)
+        binding.viewModel = ViewModelProvider(
+            this, viewModelFactory).get(UserDetailViewModel::class.java)
+
+        return binding.root
     }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-//        userDetailViewModel = ViewModelProvider(this, UserDetailViewModelFactory())
-//            .get(UserDetailViewModel::class.java)
-    }
-
-
-    companion object {
-
-    }
-
 }
