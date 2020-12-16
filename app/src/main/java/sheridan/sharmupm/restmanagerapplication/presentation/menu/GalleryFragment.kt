@@ -1,4 +1,4 @@
-package sheridan.sharmupm.restmanagerapplication.presentation.gallery
+package sheridan.sharmupm.restmanagerapplication.presentation.menu
 
 import android.os.Bundle
 import android.view.LayoutInflater

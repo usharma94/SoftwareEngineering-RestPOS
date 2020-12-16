@@ -15,11 +15,17 @@
             app:destination="@id/nav_gallery"
             app:popUpTo="@id/nav_slideshow"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_home_to_tableFragment"
+            app:destination="@id/tableFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="sheridan.sharmupm.restmanagerapplication.presentation.gallery.GalleryFragment"
+        android:name="sheridan.sharmupm.restmanagerapplication.presentation.menu.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
@@ -51,4 +57,9 @@
             android:name="selectedUser"
             app:argType="sheridan.sharmupm.restmanagerapplication.application.models.User" />
     </fragment>
+    <fragment
+        android:id="@+id/tableFragment"
+        android:name="sheridan.sharmupm.restmanagerapplication.presentation.tables.TableFragment"
+        android:label="fragment_tables"
+        tools:layout="@layout/fragment_tables" />
 </navigation>

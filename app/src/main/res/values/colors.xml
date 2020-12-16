@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="menu_blue">#3474EB</color>
+    <color name="table_available">#D7FCCC</color>
+    <color name="table_unavailable">#F8A6A6</color>
 </resources>

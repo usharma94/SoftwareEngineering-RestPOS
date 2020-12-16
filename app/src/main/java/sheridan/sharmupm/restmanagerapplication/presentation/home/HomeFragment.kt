@@ -28,7 +28,11 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
            // textView.text = it
            button.setOnClickListener{showInput()}
-            menu_card.setOnClickListener{showInput()}
+            order_card.setOnClickListener{showTables()}
+            menu_card.setOnClickListener { showInput() }
+            manage_users.setOnClickListener{
+//                this.findNavController().navigate(R.id.action_nav_home_to_userDetailFragment)
+            }
 
         })
         //button.setOnClickListener{showInput()}
@@ -36,6 +40,10 @@ class HomeFragment : Fragment() {
 
 
         return root
+    }
+
+    private fun showTables() {
+        this.findNavController().navigate(R.id.action_nav_home_to_tableFragment)
     }
 
     private fun showInput() {
