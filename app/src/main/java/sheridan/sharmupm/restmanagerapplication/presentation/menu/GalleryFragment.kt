@@ -8,28 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.snackbar.Snackbar
 import sheridan.sharmupm.restmanagerapplication.R
 import sheridan.sharmupm.restmanagerapplication.application.models.MenuItem
-
-//class GalleryFragment : Fragment() {
-//
-//    private lateinit var galleryViewModel: GalleryViewModel
-//
-//    override fun onCreateView(
-//            inflater: LayoutInflater,
-//            container: ViewGroup?,
-//            savedInstanceState: Bundle?
-//    ): View? {
-//        galleryViewModel =
-//                ViewModelProvider(this).get(GalleryViewModel::class.java)
-//        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
-//        val textView: TextView = root.findViewById(R.id.text_gallery)
-//        galleryViewModel.text.observe(viewLifecycleOwner, Observer {
-//            textView.text = it
-//        })
-//        return root
-//    }
-//}
 
 class GalleryFragment : Fragment() {
 
@@ -44,13 +26,19 @@ class GalleryFragment : Fragment() {
 
         colorList = listOf(
                 MenuItem(false, "Spicy Channa Masala", "Channa Masala", 12.99, false),
-                MenuItem(false, "Paneer", "Paneer", 10.99, false),
-                MenuItem(false, "Paranthi", "Paranthi", 5.99, false),
-                MenuItem(false, "Naan","Naan", 5.99, false),
-                MenuItem(false, "Samosa", "Samosa", 5.99, false),
-                MenuItem(false, "Alloo Tikki","Alloo Tikki", 5.99, false)
+                MenuItem(false, "Panear", "Panear", 10.99, false),
+                MenuItem(false, "Parantree", "Parantree", 5.99, false),
+                MenuItem(false, "Naaaan","Naaaan", 5.99, false),
+                MenuItem(false, "Samosia", "Samosia", 5.99, false),
+                MenuItem(false, "Aloo Tikii","Aloo Tikii", 5.99, false)
 
         )
+
+        val fab: FloatingActionButton = view.findViewById(R.id.addMenuItemFab)
+        fab.setOnClickListener { view ->
+            val navController = findNavController()
+            navController.navigate(R.id.action_global_menuItem)
+        }
 
         val recyclerView: RecyclerView = view.findViewById(R.id.color_recycler_view)
         val adapter = MenuAdapter(colorList, MenuAdapter.OnClickListener { colorName ->

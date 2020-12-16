@@ -66,4 +66,9 @@
             android:id="@+id/action_tableFragment_to_nav_gallery"
             app:destination="@id/nav_gallery" />
     </fragment>
+    <fragment
+        android:id="@+id/menuItem"
+        android:name="sheridan.sharmupm.restmanagerapplication.presentation.menu.menuItem.MenuItem"
+        android:label="menu_item_fragment"
+        tools:layout="@layout/menu_item_fragment" /><action android:id="@+id/action_global_menuItem" app:destination="@id/menuItem"/><action android:id="@+id/action_global_nav_gallery" app:destination="@id/nav_gallery"/>
 </navigation>
