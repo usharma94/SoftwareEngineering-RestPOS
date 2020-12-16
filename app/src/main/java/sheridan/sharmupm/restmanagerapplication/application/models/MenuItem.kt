@@ -4,11 +4,11 @@ import com.google.firebase.firestore.IgnoreExtraProperties
 
 @IgnoreExtraProperties
 data class MenuItem(
-    var archived: Boolean = false,
-    var itemDescription: String? = null,
-    var itemName: String? = null,
-    var itemPrice: Float? = null,
-    var onSpecial: Boolean? = false,
+        var archived: Boolean = false,
+        var itemDescription: String? = null,
+        var itemName: String? = null,
+        var itemPrice: Double = 0.00,
+        var onSpecial: Boolean = false,
 ) {
     companion object {
         const val FIELD_ARCHIVED = "archived"
