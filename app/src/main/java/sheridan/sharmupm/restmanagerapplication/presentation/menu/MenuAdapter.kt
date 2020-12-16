@@ -20,6 +20,7 @@ class MenuAdapter(
 
     class ColorViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val colorNameTextView: TextView = itemView.findViewById(R.id.item_color_text_view)
+        val menuPriceTextView: TextView = itemView.findViewById(R.id.item_price)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ColorViewHolder {
@@ -35,6 +36,7 @@ class MenuAdapter(
     override fun onBindViewHolder(holder: ColorViewHolder, position: Int) {
         val item: MenuItem = colorList[position]
         holder.colorNameTextView.text = item.itemName
+        holder.menuPriceTextView.text = item.itemPrice.toString()
 
         holder.itemView.setOnClickListener{
             onClickListener.onClick(item)

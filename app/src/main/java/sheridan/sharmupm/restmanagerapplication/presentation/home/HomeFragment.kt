@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
         //val textView: TextView = root.findViewById(R.id.text_home)
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
            // textView.text = it
-           button.setOnClickListener{showInput()}
+           //button.setOnClickListener{showInput()}
             order_card.setOnClickListener{showTables()}
             menu_card.setOnClickListener { showInput() }
             manage_users.setOnClickListener{
