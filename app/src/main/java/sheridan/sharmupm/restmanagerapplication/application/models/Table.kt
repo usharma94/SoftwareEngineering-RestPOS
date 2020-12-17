@@ -6,6 +6,7 @@ import com.google.firebase.firestore.IgnoreExtraProperties
 data class Table(
     var numOfSeats: Int? = null,
     var tableOrders: List<String>? = null,
+    var available : Boolean = true,
 ) {
     companion object {
         const val FIELD_NUMOFSEATS = "numOfSeats"
