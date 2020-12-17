@@ -31,7 +31,10 @@ class HomeFragment : Fragment() {
             order_card.setOnClickListener{showTables()}
             menu_card.setOnClickListener { showInput() }
             manage_users.setOnClickListener{
-//                this.findNavController().navigate(R.id.action_nav_home_to_userDetailFragment)
+                this.findNavController().navigate(R.id.action_nav_home_to_userCreateFragment)
+            }
+            manage_menu.setOnClickListener{
+                this.findNavController().navigate(R.id.action_nav_home_to_menuItem)
             }
 
         })
